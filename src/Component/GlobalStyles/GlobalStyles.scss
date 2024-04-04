@@ -1,0 +1,25 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #fe2c55;
+    --defaul-layout-header-height: 60px;
+    --defaul-layout-width: 1150px;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
