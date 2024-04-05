@@ -18,6 +18,11 @@
         pointer-events: none;
         opacity: 0.5;
     }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
 }
 
 .primary {
@@ -66,4 +71,18 @@
         border-color: rgba(22, 24, 35, 0.2);
         background-color: rgba(22, 24, 35, 0.03);
     }
+}
+
+.leftIcon {
+    display: flex;
+    align-self: flex-start;
+}
+
+.classname {
+    width: 100%;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
 }

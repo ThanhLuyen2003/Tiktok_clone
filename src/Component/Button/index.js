@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
-function Button({ to,
+function Button({
+    to,
     href,
     primary,
     outline,
@@ -12,15 +13,17 @@ function Button({ to,
     large,
     text,
     rounded,
+    leftIcon,
+    className,
     disabled,
     children,
-    onclick,
+    onClick,
     ...passProps }) {
 
     let Comp = 'button';
 
     const props = {
-        onclick,
+        onClick,
         ...passProps
     }
 
@@ -30,12 +33,14 @@ function Button({ to,
         small,
         large,
         text,
+        leftIcon,
+        className,
         disabled,
         rounded
     });
 
     if (disabled) {
-        delete props.onclick
+        delete props.onClick
     }
 
     if (to) {
@@ -48,6 +53,7 @@ function Button({ to,
 
     return (
         <Comp className={classes} {...props}>
+            {leftIcon}
             <span>{children}</span>
         </Comp>
     );
