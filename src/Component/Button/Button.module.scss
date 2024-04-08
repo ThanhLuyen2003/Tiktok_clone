@@ -9,6 +9,7 @@
     border: 1px solid transparent;
     background-color: white;
     user-select: none;
+    align-items: center;
 
     +.wrapper {
         margin-left: 8px;
@@ -76,13 +77,4 @@
 .leftIcon {
     display: flex;
     align-self: flex-start;
-}
-
-.classname {
-    width: 100%;
-
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-    }
-
 }
