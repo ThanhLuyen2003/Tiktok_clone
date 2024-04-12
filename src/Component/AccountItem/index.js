@@ -1,22 +1,23 @@
 import classNames from "classnames/bind";
 import styles from './AccountItem.module.scss'
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
     return (
-        <div className={cx('wrapper')}>
+        <Link to={`/@${data.nickname}`} className={cx('wrapper')}>
             <img
                 className={cx('avatar')}
-                src="https://khoinguonsangtao.vn/wp-content/uploads/2022/07/avatar-cute-2.jpg"
+                src={data.avatar}
                 alt="cc" />
             <div className={cx('info')}>
                 <p className={cx('name')}>
-                    <span></span>hehe
+                    <span>{data.full_name} </span>
                 </p>
-                <span className={cx('username')}>hehe</span>
+                <span className={cx('username')}>{data.nickname}</span>
             </div>
-        </div>
+        </Link>
     );
 }
 
