@@ -11,6 +11,7 @@ import Headerr from '../../../Poper/Menu/header';
 import Search from '../Search';
 import { Link } from 'react-router-dom';
 import { routes } from '../../../../config/routes';
+import { MessageIcon } from '../../../Icon/Icon';
 
 const cx = classNames.bind(styles);
 
@@ -116,7 +117,6 @@ function Header() {
     const renderItem = (item, index) => {
 
         const isParent = !!item.children;
-        console.log(isParent);
         const separate = item.separate;
 
         return (
@@ -169,9 +169,7 @@ function Header() {
                                 </Tippy>
 
                                 <button className={cx('actions-btn')}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill='rgba(22, 24, 35, 0.8)' width="22" height="22" viewBox="0 0 512 512">
-                                        <path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z" />
-                                    </svg>
+                                    <MessageIcon width={22} height={22} fill='rgba(22, 24, 35, 0.8)' />
                                 </button>
 
                             </>

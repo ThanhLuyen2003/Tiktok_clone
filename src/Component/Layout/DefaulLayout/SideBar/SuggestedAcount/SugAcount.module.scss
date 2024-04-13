@@ -1,0 +1,63 @@
+.wrapperr {
+    border-top: 1px solid rgba(22, 24, 35, 0.07);
+}
+
+.label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgba(22, 24, 35, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatarr {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 12px;
+
+}
+
+.nickName {
+    font-size: 14px;
+    color: #161823;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.more-btn {
+    font-size: 10px;
+    color: var(--primary);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding: 10px;
+
+}
